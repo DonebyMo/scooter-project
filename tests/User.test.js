@@ -1,6 +1,11 @@
 const User = require("../src/User");
 describe("user integrity checks", function () {
-  test(" User has a username", function () {});
+  test(" User has a username", function () {
+    const person1 = new User("Ducky", "hello", 18);
+    expect(person1.userName).toBe("Ducky");
+    expect(person1.password).toBe("hello");
+    expect(person1.age).toBe(18);
+  });
 });
 // User tests here
 
