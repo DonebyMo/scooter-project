@@ -9,6 +9,7 @@ describe("user integrity checks", function () {
     expect(person1.password).toBe("hello");
   });
   test("user has an age", function () {
+    const person1 = new User("Ducky", "hello", 18);
     expect(person1.age).toBe(18);
   });
 });
